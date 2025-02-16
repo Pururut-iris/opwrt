@@ -33,7 +33,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 
 # 2. 强制生成 VMDK 镜像
 sed -i 's/CONFIG_TARGET_IMAGES_VMDK=.*/CONFIG_TARGET_IMAGES_VMDK=y/' .config
-sed -i 's/CONFIG_TARGET_ROOTFS_PARTSIZE=.*/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/' .config
+#sed -i 's/CONFIG_TARGET_ROOTFS_PARTSIZE=.*/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/' .config
 
 # 3. 配置 AdGuard Home 上游 DNS（指向 OpenClash）
 #cat >> package/base-files/files/etc/config/adguardhome << EOF
